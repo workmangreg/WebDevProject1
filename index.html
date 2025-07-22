@@ -7,12 +7,12 @@
     <style>
         h1 {text-align: center;
             color:blue;
-            font-size: 5em;
+            font-size: 4em;
         }
         
         h2 { color:blueviolet;
             text-align: center;
-            font-size: 5em;
+            font-size: 3em;
             }
         
             body { background-color:black}
@@ -22,11 +22,20 @@
        
         a {text-decoration: underline;
         color:blueviolet}
-        .spaced-link {
+        
+        a.spaced-link {
             display:block;
             margin: 20px 0;
             font-size: 2em;
             text-align: center;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        a.spaced-link:hover {
+            color: aquamarine;
+            transform: scale(1.1);
+            text-decoration: none;
+            text-shadow: 0 0 10px;
         }
          
   
@@ -37,13 +46,15 @@
     </style>
 </head>
 <body>
+    <a href="https://code-you.org/" target="blank">
     <img src="images/CodeYou.png" alt="CodeYoulogo" width="500" />
+    </a>
     <h1>ALL IN ONE STOP FOR MY CODE:YOU LINKS</h1>
     <h2>LINKS</h2>
     
-    <a class="spaced-link"href="https://www.codewars.com/dashboard" target="_blank">Codewars</a>
-    <a class="spaced-link"href="https://github.com/" target="_blank">GitHub</a>
-    <a class="spaced-link"href=" https://meet.google.com/gfq-aghr-gbi" target="_blank">Google Meet</a>
-    <a class="spaced-link"href="https://slack.com/" target="_blank">Slack</a>
+    <a class="spaced-link" href="https://www.codewars.com/dashboard" target="_blank">Codewars</a>
+    <a class="spaced-link" href="https://github.com/" target="_blank">GitHub</a>
+    <a class="spaced-link" href="https://meet.google.com/gfq-aghr-gbi" target="_blank">Google Meet</a>
+    <a class="spaced-link" href="https://slack.com/" target="_blank">Slack</a>
 </body>
 </html>
