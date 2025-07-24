@@ -5,25 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        h1 {text-align: center;
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+        }
+    
+        header,nav,main,footer {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header img {
+            display: block;
+            margin: 0 auto;}
+    
+        h1 {
+            text-align: center;
             color:blue;
             font-size: 4em;
         }
         
-        h2 { color:blueviolet;
+        h2 { 
+            color:blueviolet;
             text-align: center;
             font-size: 3em;
-            }
-        
-            body { background-color:black}
-        img {display:block;
-        margin:0 auto;
-        color: aliceblue;}
+        }
        
-        a {text-decoration: underline;
-        color:blueviolet}
+         img {
+            display:block;
+            margin:0 auto;
+            
+        }
+       
+        a {
+            text-decoration: underline;
+            color:blueviolet
+        }
         
-        a.spaced-link {
+        nav a.spaced-link {
             display:block;
             margin: 20px 0;
             font-size: 2em;
@@ -31,13 +51,19 @@
             transition: color 0.3s ease, transform 0.3s ease;
         }
 
-        a.spaced-link:hover {
+        nav a.spaced-link:hover {
             color: aquamarine;
             transform: scale(1.1);
             text-decoration: none;
             text-shadow: 0 0 10px;
         }
-         
+        footer {
+            text-align: center;
+            color: grey;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+        
   
             
     
@@ -46,15 +72,31 @@
     </style>
 </head>
 <body>
+    
+    <header>
     <a href="https://code-you.org/" target="blank">
     <img src="images/CodeYou.png" alt="CodeYoulogo" width="500" />
     </a>
-    <h1>ALL IN ONE STOP FOR MY CODE:YOU LINKS</h1>
-    <h2>LINKS</h2>
     
+    <h1>ALL IN ONE STOP FOR MY CODE:YOU LINKS</h1>
+   
+</header>
+    
+<main>
+   
+    <h2>LINKS</h2>
+    <nav aria-label="Main navigation">
     <a class="spaced-link" href="https://www.codewars.com/dashboard" target="_blank">Codewars</a>
     <a class="spaced-link" href="https://github.com/" target="_blank">GitHub</a>
     <a class="spaced-link" href="https://meet.google.com/gfq-aghr-gbi" target="_blank">Google Meet</a>
     <a class="spaced-link" href="https://slack.com/" target="_blank">Slack</a>
+
+</nav>
+    
+</main>
+
+    <footer>By. Greg Workman</footer>
+
 </body>
+
 </html>
